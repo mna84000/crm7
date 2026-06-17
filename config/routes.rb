@@ -1,3 +1,4 @@
+# CRM Routes
 Rails.application.routes.draw do
   get "customers/index"
   get "customers/alphabetized"
@@ -20,5 +21,4 @@ Rails.application.routes.draw do
   root "customers#index"
 get "/customers/alphabetized", to: "customers#alphabetized"
 get "/customers/missing_email", to: "customers#missing_email"
-
 end
